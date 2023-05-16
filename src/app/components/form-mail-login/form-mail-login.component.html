@@ -1,0 +1,20 @@
+<h1>
+    Hai già un account?
+</h1>
+<h2>
+    Accedi ora!
+</h2>
+
+<form action="" method="post" [formGroup]="loginGroup" (ngSubmit)="ngOnSubmit()">
+    <p>es: username@domain</p>
+    <div class="d-flex my-3 align-items-center justify-content-between">
+      <label for="mail_address" class="me-2">Mail Address: </label>
+      <input id ="mail_address" type="email" pInputText formControlName="addressInput" placeholder="Insert mail address" required />
+    </div>
+    <div class="d-flex my-3 align-items-center justify-content-between">
+        <label for="password" class="me-2">Password: </label>
+        <p-password id="password" formControlName="password" [feedback]="false" placeholder="Insert password" [toggleMask]="true" required></p-password>
+    </div>
+
+
+</form>
